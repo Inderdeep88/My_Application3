@@ -5,6 +5,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 
@@ -17,6 +19,11 @@ public class SecondActivity extends ActionBarActivity {
         TextView textView= (TextView) findViewById(R.id.textView2);
         Intent intent=getIntent();
         textView.setText(intent.getStringExtra(MESSAGE_KEY));
+
+        String[] item =new String[] {"Inder", "Inder2", "Inder3"};
+        Spinner spinner=(Spinner)findViewById(R.id.spinner);
+      //  ArrayAdapter aa= new ArrayAdapter();
+
     }
 
     @Override
